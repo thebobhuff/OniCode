@@ -1,0 +1,27 @@
+pub mod agent;
+pub mod client;
+pub mod compaction;
+pub mod context;
+pub mod error;
+pub mod event_stream;
+pub mod message;
+pub mod message_queue;
+pub mod permissions;
+pub mod question;
+pub mod session;
+pub mod session_store;
+pub mod tool;
+
+pub use agent::Agent;
+pub use client::LlmClient;
+pub use compaction::{compact_session, extract_file_operations, should_compact, CompactionSummary, FileOperation, FileOpType};
+pub use context::load_project_context;
+pub use error::{CoreError, Result};
+pub use event_stream::{EventStream, EventStreamProducer, StreamError};
+pub use message::{FileOp, Message, MessageFinish, MessagePart, MessageRole, ToolPartState};
+pub use message_queue::{MessagePriority, MessageQueue, QueueMode};
+pub use permissions::{PermissionDecision, PermissionManager};
+pub use question::{QuestionBridge, QuestionRequest, QuestionResponse, QuestionTool};
+pub use session::Session;
+pub use session_store::SessionStore;
+pub use tool::{Tool, ToolInfo, ToolInput, ToolOutput, ToolRegistry};

@@ -1,0 +1,25 @@
+[package]
+name = "onicode-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "Core agent loop, tool trait, and LLM clients for OniCode"
+
+[dependencies]
+tokio.workspace = true
+tokio-stream.workspace = true
+async-trait.workspace = true
+futures.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+reqwest.workspace = true
+eventsource-stream.workspace = true
+tracing.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+uuid.workspace = true
+chrono.workspace = true
+parking_lot.workspace = true
+dirs.workspace = true
+rusqlite = { version = "0.32", features = ["bundled"] }
+onicode-config = { path = "../config" }

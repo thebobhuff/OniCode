@@ -1,0 +1,27 @@
+[package]
+name = "onicode"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "Open source terminal-based AI coding agent"
+default-run = "oni"
+
+[[bin]]
+name = "oni"
+path = "src/main.rs"
+
+[dependencies]
+tokio.workspace = true
+clap.workspace = true
+clap_complete.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+anyhow.workspace = true
+dirs.workspace = true
+serde_json.workspace = true
+rand = "0.8"
+onicode-core = { path = "../core" }
+onicode-tui = { path = "../tui" }
+onicode-tools = { path = "../tools" }
+onicode-mcp = { path = "../mcp" }
+onicode-config = { path = "../config" }

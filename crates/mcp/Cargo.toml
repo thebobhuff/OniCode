@@ -1,0 +1,19 @@
+[package]
+name = "onicode-mcp"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "MCP client for OniCode with stdio, SSE, Streamable HTTP, and WebSocket transports"
+
+[dependencies]
+tokio.workspace = true
+tokio-stream.workspace = true
+async-trait.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+reqwest.workspace = true
+tracing.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+uuid.workspace = true
+rmcp.workspace = true

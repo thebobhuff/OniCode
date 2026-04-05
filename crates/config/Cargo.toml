@@ -1,0 +1,24 @@
+[package]
+name = "onicode-config"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "Configuration system for OniCode: settings, hooks, cron, agents, skills"
+
+[dependencies]
+tokio.workspace = true
+tokio-cron-scheduler.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+serde_yaml.workspace = true
+toml.workspace = true
+pulldown-cmark.workspace = true
+regex.workspace = true
+tracing.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+dirs.workspace = true
+glob.workspace = true
+once_cell.workspace = true
+chrono.workspace = true
+onicode-mcp = { path = "../mcp" }

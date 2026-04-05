@@ -1,0 +1,18 @@
+# clippy.toml
+# https://doc.rust-lang.org/clippy/lint_configuration.html
+
+# Allow more lines in functions for TUI rendering code
+too-many-arguments-threshold = 10
+
+# Disallow common mistakes
+disallowed-types = []
+disallowed-methods = []
+
+# Cognitive complexity threshold
+cognitive-complexity-threshold = 20
+
+# Max struct fields before suggesting refactor
+struct-excessive-bools = 5
+
+# Allow panic! in binary crate, not in libraries
+allow-panic-in-tests = true
